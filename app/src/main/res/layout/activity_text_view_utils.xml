@@ -4,11 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shinelon.myutils.activity.MainActivity">
+    android:gravity="center"
+    tools:context="com.example.shinelon.myutils.activity.TextViewUtilsActivity">
 
     <TextView
+        android:id="@+id/tv_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       />
-
+        android:text="我是大帅哥"
+        android:textColor="#00FF00"
+        android:textSize="18sp" />
 </LinearLayout>

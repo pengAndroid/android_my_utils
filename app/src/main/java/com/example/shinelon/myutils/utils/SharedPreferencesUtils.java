@@ -21,14 +21,6 @@ public class SharedPreferencesUtils {
      */
     private static final String FILE_NAME = "file_data";
 
-    private SharedPreferences preferences;
-    private SharedPreferences.Editor editor;
-
-    public SharedPreferencesUtils(Context mContext, String preferenceName) {
-        preferences = mContext.getSharedPreferences(preferenceName, Context.MODE_PRIVATE);
-        editor = preferences.edit();
-    }
-
     /**
      * 清空数据
      *

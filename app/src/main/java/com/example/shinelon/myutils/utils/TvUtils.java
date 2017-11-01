@@ -7,7 +7,7 @@ import android.text.style.TextAppearanceSpan;
 import android.widget.TextView;
 
 /**
- * Created by Shinelon on 2017/11/1.
+ * Create by Peng on 2017年11月1日16:42:12
  */
 
 public class TvUtils {

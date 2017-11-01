@@ -12,7 +12,8 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 /**
- * 关于TextView相关的工具类
+ * 关于TextView相关的工具类（修改部分字体颜色和字体）
+ * Create by Peng on 2017年11月1日16:47:25
  */
 public class TextViewUtilsActivity extends AppCompatActivity {
     @InjectView(R.id.tv_test)
@@ -23,13 +24,12 @@ public class TextViewUtilsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_view_utils);
         ButterKnife.inject(this);
-//        tvTest.setText(TvUtils.stringToSpannable(passWd, 32, R.color.colorBlue));
         /**
          *直接调用
          */
         SpannableStringBuilder sp = TvUtils.stringToSpannable("我是")
                 .append(TvUtils.stringToSpannableColor("太阳大神", 0xffff0000)
-                        .append(TvUtils.stringToSpannable("玩韩信贼6", 66, 0xff2fb9c3))
+                        .append(TvUtils.stringToSpannable("玩韩信贼6", 64, 0xff2fb9c3))
                 );
         tvTest.setText(sp);
         /**
@@ -40,7 +40,6 @@ public class TextViewUtilsActivity extends AppCompatActivity {
                 .addSsbColor("太阳大神", 0xffff0000)
                 .addSsb("玩韩信贼6", 64, 0xff2fb9c3)
                 .showIn(tvTest);
-
 
     }
 }

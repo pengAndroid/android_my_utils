@@ -23,7 +23,7 @@ public class TvUtils {
      */
     public static SpannableStringBuilder stringToSpannable(String tv, int tvSize, int color) {
         final SpannableStringBuilder sp = new SpannableStringBuilder(tv);
-        ColorStateList Colors = ColorStateList.valueOf(0xff2fb9c3);
+        ColorStateList Colors = ColorStateList.valueOf(color);
         sp.setSpan(new TextAppearanceSpan(null, 0, tvSize, Colors, null), 0, tv.toString().length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE); //字体大小
         return sp;
     }
